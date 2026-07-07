@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elements </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-color:skyblue;
+color:black;
+margin:20px;
+padding:20px;
+font-size: 16px;
+word-spacing: -2px;
+
+}
+button{
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+text-align: center;
+border-radius: 10px;
+
+}
+
+button:hover{
+    background-color: rgb(25, 25, 219);
+
+}
+
+</style>
+</head>
+<body>
+<div style="background-color:black;
+    margin: 100px; 
+     width : 80%;
+     height: 220px;
+     text-align: center;
+     color: white; 
+     align-content: center;
+    "
+    >
+    <p>     
+         </p><br>
+
+    <p><span style="font-size: 40px; color: white;">LEARN HTML 1</span></p> <br>
+    <button><p><a style="color: white;" href="index.html">HOME</a></p></button>
+    </div><br>
+
+<span style="font-size: 38px;">HTML Elements</span><br>
+<br>
+
+<hr>
+Html documents are made up by HTML elements.
+<hr>
+<br>
+<p><span style="font-size: 28px;">HTML Elements</span></p>
+
+<pre>
+HTML elements are written with a start tag, with an end tag, with the content in between.
+
+&lt;tagname>content&lt;/tagname>
+
+The HTML element is everything from the start tag to the end tag:
+
+<span style="font-size: 28px; color: blue;">&lt;p>FIRST PARAGRAPH.&lt;/p></span>
+</pre>
+
+
+    <table>
+        <tbody>
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td>&lt;h1></td>
+            <td>my first heading</td>
+            <td>&lt;/h1></td>
+        </tr>
+        <tr>
+            <td>&lt;p></td>
+            <td>my first paragraph</td>
+            <td>&lt;/p></td>
+        </tr>
+        </tbody>
+    </table> 
+
+<p>
+<span style="color: red;">NOTE:</span> HTML elements like &lt;br> do not have an end tag. 
+</p>
+<Pre>
+<span style="font-size: 28px;">Nested HTML Elements</span>
+
+Html elements can be nested (elements can contain elements).
+All HTML documents consist of nested HTML elements.
+This example contains 4 HTML elements: 
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 360px;
+     color: white;
+     align-content: center;">
+        
+<pre>
+    <code>
+ <span style="font-size: 30px; ">Example</span>
+
+ &lt;!DOCTYPE html>
+ &lt;html>
+ &lt;body>
+
+ &lt;h1>My First Heading&lt;/h1>
+
+ &lt;p>My First paragragh.&lt;/p>
+
+ &lt;/body>
+ &lt;html>
+
+</code>
+</pre>
+</div>
+<span style="font-size: 22px;">HTML Example Explained</span>
+
+The &lt;html> element defines the whole document.
+It has a start tag &lt;html> and an end tag &lt;/html>.
+The element content is another HTML element (the &lt;body> element). 
+
+
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 230px;
+     color: white;
+     align-content: center;">
+  <pre>      
+ &lt;html>
+ &lt;body>
+
+ &lt;h1>My First Heading&lt;/h1>
+ &lt;p>My First paragragh.&lt;/p>
+
+ &lt;/body>
+ &lt;html>
+</pre>
+</div>
+
+The &lt;body> element defines the document body.
+It has a start tag &lt;body> and an end tag &lt;/body>.
+The element content is two other HTML elements (&lt;h1> and &lt;p>). 
+
+
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 230px;
+     color: white;
+     align-content: center;">
+     <pre>
+ &lt;body>
+
+ &lt;h1>My First Heading&lt;/h1>
+
+ &lt;p>My First paragragh.&lt;/p>
+
+ &lt;/body>
+ </pre>
+</div>
+
+
+The &lt;h1> element defines a heading.
+It has a start tag &lt;h1> and an end tag &lt;/h1>.
+The element content is: My First Heading 
+
+
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 30px;
+     color: white;
+     align-content: center;
+     text-align: center; align-items: center;">&lt;h1>My First Heading&lt;/h1>
+
+</div>
+<hr>
+The &lt;p> element defines a paragraph.
+It has a start tag &lt;p> and an end tag &lt;/p>.
+The element content is: My First paragraph. 
+
+
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 30px;
+     color: white;
+     text-align: center; align-items: center;">&lt;p>My First paragragh.&lt;/p>
+
+</div>
+<hr>
+<span style="font-size: 22px; word-spacing: -8px;">Don't Forget the End Tag</span>
+
+Some HTML elements will display correctly, even if you forget the end tag:
+
+
+
+<div style="background-color: black; margin: 50px; 
+    width: 90%;
+     height: 230px;
+     color: white;
+     align-content: center;">
+     <pre>
+    &lt;html>
+    &lt;body>
+
+    &lt;p>This is a paragraph
+    &lt;p>This is a paragraph
+
+    &lt;/body>
+    &lt;html></pre>
+</div>
+The example above works in all browsers, because the closing tag is considered optional.
+Never rely on this. It might produce unexpected results and/or errors if you forget the end tag. 
+
+
+<hr>
+<span style="font-size: 22px; word-spacing: -8px;">Empty HTML Elements</span>
+
+HTML elements with no content are called empty elements.
+&lt;br> is an empty element without a closing tag (the &lt;br> tag defines a line break).
+Empty elements can be "closed" in the opening tag like this: &lt;br />.
+HTML5 does not require empty elements to be closed. But if you stricter validation, or you need to make
+your document readable by XML parsers, you should close all HTML elements. 
+
+
+
+<span style="font-size: 32px;">HTML Tip: Use Lowercase Tags</span>
+
+HTML tags are not case sensitive: &lt;P> means the same as &lt;p>.
+The HTML5 standard does not require lowercase tags, but it's recommended lowercase in HTML4, and demands
+lowercase for stricter document types like XHTML. 
+
+<p><a style="text-align: left;" href="basics.html">previous</a>
+<a style="padding-left:500px ;" href="index.html">Next</a>
+
+
+</body>
+</html>
