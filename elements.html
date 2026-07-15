@@ -293,3 +293,266 @@ HTML elements like
 do not have an end tag.
 
 </p>
+ id="q6p3vs"
+<h3>Nested HTML Elements</h3>
+
+<p>
+HTML elements can be nested (elements can contain elements).
+All HTML documents consist of nested HTML elements.
+</p>
+
+<p>
+This example contains 4 HTML elements:
+</p>
+
+
+<div class="example">
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My First paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+
+
+<h3>HTML Example Explained</h3>
+
+
+<p>
+The <code>&lt;html&gt;</code> element defines the whole document.
+It has a start tag <code>&lt;html&gt;</code> and an end tag 
+<code>&lt;/html&gt;</code>.
+</p>
+
+<p>
+The element content is another HTML element:
+the <code>&lt;body&gt;</code> element.
+</p>
+
+
+
+<div class="example">
+
+<pre><code>
+&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My First paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+
+
+<p>
+The <code>&lt;body&gt;</code> element defines the document body.
+It has a start tag <code>&lt;body&gt;</code> and an end tag 
+<code>&lt;/body&gt;</code>.
+</p>
+
+<p>
+The element content is two other HTML elements:
+<code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>.
+</p>
+
+
+
+<div class="example">
+
+<pre><code>
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My First paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+</code></pre>
+
+</div>
+
+
+
+
+<p>
+The <code>&lt;h1&gt;</code> element defines a heading.
+It has a start tag <code>&lt;h1&gt;</code> and an end tag
+<code>&lt;/h1&gt;</code>.
+</p>
+
+<p>
+The element content is:
+<strong>My First Heading</strong>
+</p>
+
+
+
+<div class="example">
+
+<pre><code>
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+</code></pre>
+
+</div>
+
+
+
+<p>
+The <code>&lt;p&gt;</code> element defines a paragraph.
+It has a start tag <code>&lt;p&gt;</code> and an end tag
+<code>&lt;/p&gt;</code>.
+</p>
+
+<p>
+The element content is:
+<strong>My First paragraph.</strong>
+</p>
+
+
+
+<div class="example">
+
+<pre><code>
+&lt;p&gt;My First paragraph.&lt;/p&gt;
+</code></pre>
+
+</div>
+
+
+
+<hr>
+
+
+<h3>Don't Forget the End Tag</h3>
+
+
+<p>
+Some HTML elements will display correctly, even if you forget the end tag:
+</p>
+
+
+
+<div class="example">
+
+<pre><code>
+&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;p&gt;This is a paragraph
+
+&lt;p&gt;This is a paragraph
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+
+
+<p>
+The example above works in browsers because the closing tag is considered optional.
+</p>
+
+<p>
+Never rely on this. It might produce unexpected results or errors if you forget the end tag.
+</p>
+
+
+
+<hr>
+
+
+<h3>Empty HTML Elements</h3>
+
+
+<p>
+HTML elements with no content are called empty elements.
+</p>
+
+<p>
+The <code>&lt;br&gt;</code> tag is an empty element without a closing tag.
+It defines a line break.
+</p>
+
+<p>
+Empty elements can also be closed like this:
+</p>
+
+
+<p>
+<code>&lt;br /&gt;</code>
+</p>
+
+
+<p>
+HTML5 does not require empty elements to be closed,
+but closing them can improve readability and compatibility with XML.
+</p>
+
+
+
+
+<h2>HTML Tip: Use Lowercase Tags</h2>
+
+
+<p>
+HTML tags are not case sensitive:
+</p>
+
+
+<p>
+<code>&lt;P&gt;</code> means the same as <code>&lt;p&gt;</code>.
+</p>
+
+
+<p>
+The HTML5 standard does not require lowercase tags,
+but using lowercase is recommended because it makes your code cleaner.
+</p>
+
+
+
+<div class="navigation">
+
+<a href="basics.html">
+← Previous
+</a>
+
+
+<a href="index.html">
+🏠 Home
+</a>
+
+
+</div>
+
+
+
+</body>
+
+</html>
