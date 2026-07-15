@@ -1,115 +1,227 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Introduction </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-background-color:skyblue;
-color:black;
-margin:20px;
-padding:20px;
-font-size: 16px;
-word-spacing: -2px;
-}
-button{
-    height: 40px;
-    width: 100px;
-    background-color: blue;
-    
-text-align: center;
-border-radius: 10px;
-}
-button:hover{
-    background-color: rgb(25, 25, 219);
+    <title>Introduction</title>
 
-}
-</style>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color:skyblue;
+            color:black;
+            font-family:"Times New Roman", serif;
+            font-size:16px;
+            line-height:1.7;
+            padding:20px;
+        }
+
+        .header{
+            background:black;
+            color:white;
+            max-width:700px;
+            width:100%;
+            margin:20px auto;
+            padding:30px;
+            text-align:center;
+            border-radius:10px;
+        }
+
+        .header h1{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .home-btn{
+            display:inline-block;
+            background:blue;
+            color:white;
+            text-decoration:none;
+            padding:10px 25px;
+            border-radius:10px;
+        }
+
+        .home-btn:hover{
+            background:rgb(25,25,219);
+        }
+
+        h2{
+            font-size:36px;
+            margin:25px 0 15px;
+        }
+
+        h3{
+            font-size:28px;
+            margin:20px 0 10px;
+        }
+
+        ul{
+            margin-left:30px;
+            margin-bottom:20px;
+        }
+
+        .example{
+            background:black;
+            color:white;
+            max-width:900px;
+            margin:30px auto;
+            padding:20px;
+            border-radius:10px;
+            overflow-x:auto;
+        }
+
+        .example h2{
+            color:white;
+            text-align:center;
+        }
+
+        .example h3{
+            color:white;
+            text-align:center;
+            font-style:italic;
+        }
+
+        pre{
+            white-space:pre-wrap;
+            word-wrap:break-word;
+            overflow-x:auto;
+        }
+
+        .note{
+            color:red;
+            font-weight:bold;
+        }
+
+        .navigation{
+            display:flex;
+            justify-content:space-between;
+            margin-top:40px;
+        }
+
+        .navigation a{
+            background:blue;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            border-radius:10px;
+        }
+
+        .navigation a:hover{
+            background:rgb(25,25,219);
+        }
+
+        @media(max-width:600px){
+
+            .header h1{
+                font-size:30px;
+            }
+
+            h2{
+                font-size:28px;
+            }
+
+            h3{
+                font-size:22px;
+            }
+
+            .navigation a{
+                padding:8px 15px;
+                font-size:14px;
+            }
+        }
+
+    </style>
+
 </head>
+
 <body>
-    <div style="background-color:black;
-    margin: 100px; 
-     width : 80%;
-     height: 200px;
-     text-align: center;
-     color: white;
-     align-content: center;
-    "
-    ><p>     
-         </p><br>
-    <p><span style="font-size: 40px; color: white;">LEARN HTML 1</span></p>
-   <button><p><a style="color: white;" href="index.html">HOME</a></p></button>
-    </div>
-<p><span style="font-size: 36px;">HTML Introduction</span></p>
-<p><span style="font-size: 28px;">What is HTML?</span></p>
-<p> <pre>•HTML stands for Hyper Text Markup Language 
-• 
-•A markup language is a set of markup tags
-•HTML documents are described by HTML tags
-•Each HTML tag describes different document content
-</pre>
-</p>
-<div style="background-color: black;
-    margin: 50px; 
-    width: 90%;
-     height: 390px;
-     text-align: center;
-     color: white;
-     align-content: center;
-    "
-    >
-<P>
-   <span style="font-size: 38px;"> HTML Example</span><br>
-<br>
- <span style="font-size: 28px; font-style: italic;"> small HTML document </span>
-</P>
-<pre><code>
-&lt;!DOCTYPE html&gt; 
-&lt;html&gt; 
-&lt;head&gt; 
-&lt;title&gt; Page Title&lt;/title&gt; 
-&lt;/head&gt; 
-&lt;body&gt; 
 
-&lt;h1&gt; This is a Heading&lt;/h1&gt; 
-&lt;p&gt; This is a paragraph.&lt;/p&gt; 
+<div class="header">
+    <h1>LEARN HTML 1</h1>
 
-
-&lt;/body&gt; 
-&lt;/html&gt; 
-</code> </pre>
+    <a href="index.html" class="home-btn">HOME</a>
 </div>
 
-<p>
-   <span style="font-size: 32px;">Example Explained</span>
-   <pre>
-    <code>
-•The DOCTYPE declaration defines the document type to be HTML.
-•The text between &lt;html&gt; and &lt;/html&gt; describes an HTML document
-•The text between &lt;head> and &lt;/head> provides information about the document
-•The text between &lt;title> and &lt;/title> provides a title for the document
-•The text between &lt;body> and &lt;/body> descibes the visable page content
-•The text between &lt;h1> and &lt;/h1> describes the heading
-•The text between &lt;p> and &lt;/p> describes a paragraph
-</code>
-</pre>
-</p>
-<p>
-   <span style="font-size: 32px;"> HTML Tags</span><br>
-Html tags are keywords (tag names) surrounded by angle brackets:<br>
+<h2>HTML Introduction</h2>
 
-&lt;tagname&gt;content &lt;/tagname&gt;
-<pre>
-•Html tags normally come in pairs like &lt;p> and &lt;/p>
-•the first tag in a pair is the start tag, the second tag is the end tag
-•The end tag is written like the start tag, but with a slash before the tag name
-</pre>
+<h3>What is HTML?</h3>
+
+<ul>
+    <li>HTML stands for <strong>HyperText Markup Language</strong>.</li>
+    <li>A markup language is a set of markup tags.</li>
+    <li>HTML documents are described by HTML tags.</li>
+    <li>Each HTML tag describes different document content.</li>
+</ul>
+
+<div class="example">
+
+<h2>HTML Example</h2>
+
+<h3>Small HTML Document</h3>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+<h2>Example Explained</h2>
+
+<ul>
+    <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type.</li>
+    <li>The <code>&lt;html&gt;</code> element is the root of an HTML document.</li>
+    <li>The <code>&lt;head&gt;</code> element contains information about the document.</li>
+    <li>The <code>&lt;title&gt;</code> element specifies the page title.</li>
+    <li>The <code>&lt;body&gt;</code> element contains the visible page content.</li>
+    <li>The <code>&lt;h1&gt;</code> element defines a heading.</li>
+    <li>The <code>&lt;p&gt;</code> element defines a paragraph.</li>
+</ul>
+
+<h2>HTML Tags</h2>
+
+<p>
+HTML tags are keywords (tag names) surrounded by angle brackets:
 </p>
-<span style="color: red;"><u>NOTE:</u></span> Start tag is often called the opening tag. The end tag is often called the closing tag. 
-<p><a style="text-align: left;" href="index.html">previous</a>
-<a style="padding-left:500px ;" href="basics.html">Next</a>
+
+<p>
+<code>&lt;tagname&gt;content&lt;/tagname&gt;</code>
 </p>
+
+<ul>
+    <li>HTML tags normally come in pairs like <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.</li>
+    <li>The first tag is called the start (opening) tag.</li>
+    <li>The second tag is called the end (closing) tag.</li>
+    <li>The closing tag contains a forward slash before the tag name.</li>
+</ul>
+
+<p>
+<span class="note"><u>NOTE:</u></span>
+The start tag is often called the <strong>opening tag</strong>, while the end tag is called the <strong>closing tag</strong>.
+</p>
+
+<div class="navigation">
+    <a href="index.html">← Previous</a>
+    <a href="basics.html">Next →</a>
+</div>
+
 </body>
 </html>
