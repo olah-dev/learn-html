@@ -1,131 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Basics </title>
-        <meta charset="UTF-8">
+
+<head>
+    <title>Basics</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-body {
-background-color:skyblue;
-color:black;
-margin:20px;
-padding:20px;
-font-size: 16px;
-word-spacing: -2px;
-}
-button{
-    height: 40px;
-    width: 100px;
-    background-color: blue;
-    color: white;
-text-align: center;
-border-radius: 10px;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
+        body{
+            background:skyblue;
+            font-family:"Times New Roman", serif;
+            font-size:16px;
+            line-height:1.7;
+            padding:20px;
+        }
 
-}
+        .header{
+            background:black;
+            color:white;
+            max-width:700px;
+            margin:20px auto;
+            padding:30px;
+            text-align:center;
+            border-radius:10px;
+        }
 
-button:hover{
-    background-color: rgb(25, 25, 219);
+        .header h1{
+            font-size:40px;
+            margin-bottom:20px;
+        }
 
-}
-</style>
+        .home-btn{
+            display:inline-block;
+            background:blue;
+            color:white;
+            text-decoration:none;
+            padding:10px 25px;
+            border-radius:10px;
+        }
+
+        .home-btn:hover{
+            background:rgb(25,25,219);
+        }
+
+        h2{
+            font-size:36px;
+            margin:25px 0 15px;
+        }
+
+        h3{
+            font-size:28px;
+            margin:20px 0 10px;
+        }
+
+        .example{
+            background:black;
+            color:white;
+            max-width:900px;
+            margin:25px auto;
+            padding:20px;
+            border-radius:10px;
+            overflow-x:auto;
+        }
+
+        pre{
+            white-space:pre-wrap;
+            overflow-x:auto;
+        }
+
+        .navigation{
+            display:flex;
+            justify-content:space-between;
+            margin-top:40px;
+        }
+
+        .navigation a{
+            background:blue;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            border-radius:10px;
+        }
+
+        .navigation a:hover{
+            background:rgb(25,25,219);
+        }
+
+        @media(max-width:600px){
+
+            .header h1{
+                font-size:30px;
+            }
+
+            h2{
+                font-size:28px;
+            }
+
+            h3{
+                font-size:22px;
+            }
+
+        }
+
+    </style>
+
 </head>
-    
-    <body>
-        <div style="background-color:black;
-    margin:100px ;
-     width : 80%;
-     height: 200px;
-     text-align: center;
-     color: black;
-     align-content: center;
-    "
-    ><p>     
-         </p><br>
-    <p><span style="font-size: 40px; color: white;">LEARN HTML 1</span></p>
-   <button><p><a style="color: white;" href="index.html">HOME</a></p></button>
-    </div><br>
-    <span style="font-size: 38px;">HTML Basic Examples</span>
-    <p>
-        <pre>Don't worry if these examples use tags you have not learned.
-You will learn them in the next chapters. </pre>
-    </p>
-    <p><span style="font-size: 20px;">HTML Documents</span></p>
-    <pre> All HTML document must star with a type declaration: &lt;!DOCTYPE html>.
-The HTML document itself begins with &lt;html> and ends with &lt;/html>.
-The visible part of the html document is between &lt;body> and &lt;/body>.
-</pre>
-    <div style="background-color: black; margin: 50px; 
-    width: 90%;
-     height: 200px;
-     text-align: center;
-     color: white;
-     align-content: center;">
-        <span style="font-size: 30px; ">Example</span>
-        <pre>
- &lt;!DOCTYPE html>
- &lt;html>
- &lt;body>
- &lt;h1>My First Heading&lt;/h1>
- &lt;p>My First paragragh.&lt;/p>
- &lt;/body>
- &lt;/html>
-</pre>
 
-    </div>
+<body>
 
-  <p> <span style="font-size: 30px; "> HTML Paragraphs</span></p>
+<div class="header">
 
-HTML paragraphs are defined with the &lt;p> tag.
-<br>
-<br>
-<div style="background-color: black;
-margin: 50px; 
-    width: 90%;
-     height: 100px;
-     text-align: center;
-     color: white;
-     align-content: center;">
-Example
-<pre>
-&lt;p>This is a Paragraph.&lt;/p>
+<h1>LEARN HTML 1</h1>
 
-&lt;p>This is another paragraph.&lt;/p>
-</pre>
+<a href="index.html" class="home-btn">HOME</a>
+
 </div>
 
-<p><span style="font-size: 30px; ">HTML Links</span></p>
+<h2>HTML Basic Examples</h2>
 
-HTML links are defined with the &lt;a> tag:
-<div style="background-color: black;
-color: white;">
+<p>
+Don't worry if these examples use tags you have not learned yet.
+You will learn them in the next chapters.
+</p>
 
-Example
-<br><br>
-&lt;a href ="https://www.google.com/">This is a link&lt;/a>
+<h3>HTML Documents</h3>
+
+<p>
+All HTML documents must start with the declaration
+<code>&lt;!DOCTYPE html&gt;</code>.
+The HTML document begins with
+<code>&lt;html&gt;</code>
+and ends with
+<code>&lt;/html&gt;</code>.
+The visible page content is between
+<code>&lt;body&gt;</code>
+and
+<code>&lt;/body&gt;</code>.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My First Paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
 </div>
-<pre>
-The link address is specified in the href attribute.
 
-Attributes are used to provide additional information about HTML elements.
-</pre>
+<h3>HTML Paragraphs</h3>
 
-<p><span style="font-size: 30px; ">HTML Images</span></p>
-<pre>
-Html images are defined with the &lt;img> tag.
-The source file (src), alternative text (alt), and size (width and height) are provided as attributes; 
-</pre>
-<div style="background-color: black; margin: 50px; 
-    width: 100%;
-     height: 60px;
-     text-align: center;
-     color: white;
-     align-content: center;">
-Example
-<br><br>
-&lt;img src="yourimage.jpg" alt="your image text" width="104" height="142">
+<p>
+HTML paragraphs are defined with the
+<code>&lt;p&gt;</code> tag.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code></pre>
+
 </div>
-<p><a style="text-align: left;" href="introduction.html">previous</a>
-<a style="padding-left:500px ;" href="elements.html">Next</a>
-    </body>
+
+<h3>HTML Links</h3>
+
+<p>
+HTML links are defined with the
+<code>&lt;a&gt;</code> tag.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;a href="https://www.google.com/"&gt;
+This is a link
+&lt;/a&gt;
+</code></pre>
+
+</div>
+
+<p>
+The link address is specified in the
+<code>href</code> attribute.
+
+Attributes provide additional information about HTML elements.
+</p>
+
+<h3>HTML Images</h3>
+
+<p>
+HTML images are defined with the
+<code>&lt;img&gt;</code> tag.
+
+The image source (<code>src</code>), alternative text (<code>alt</code>),
+width and height are provided as attributes.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<pre><code>
+&lt;img src="yourimage.jpg"
+alt="your image text"
+width="104"
+height="142"&gt;
+</code></pre>
+
+</div>
+
+<div class="navigation">
+
+<a href="introduction.html">← Previous</a>
+
+<a href="elements.html">Next →</a>
+
+</div>
+
+</body>
 </html>
