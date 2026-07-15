@@ -1,60 +1,102 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Home </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    
-body {
-background-color:skyblue;
-color:black;
-margin:20px;
-padding:20px;
-font-family: Times New Roman;
-font-size: 16px;
-}
-button{
-    height: 40px;
-    width: 100px;
-    background-color: blue;
-    color: white;
-text-align: center;
-border-radius: 10px;
+    <title>Home</title>
 
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-button:hover{
-    background-color: rgb(25, 25, 219);
+        body{
+            background:skyblue;
+            font-family:"Times New Roman", serif;
+            padding:20px;
+        }
 
-}
+        .header{
+            background:black;
+            color:white;
+            max-width:500px;
+            margin:20px auto;
+            padding:30px;
+            text-align:center;
+            border-radius:10px;
+        }
 
-</style>
+        .header h1{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .button-grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:15px;
+            max-width:500px;
+            margin:20px auto;
+        }
+
+        .button-grid a{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:45px;
+            background:blue;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+        }
+
+        .button-grid a:hover{
+            background:rgb(25,25,219);
+        }
+
+        @media (max-width:500px){
+            .header h1{
+                font-size:30px;
+            }
+
+            .button-grid{
+                grid-template-columns:repeat(2,1fr);
+                gap:10px;
+            }
+
+            .button-grid a{
+                height:42px;
+                font-size:14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div style="background-color:black;
-    margin: 100px; 
-     width : 80%;
-     height: 220px;
-     text-align: center;
-     color: white; 
-     align-content: center;
-    "
-    >
-    <p>     
-         </p><br>
 
-    <p><span style="font-size: 40px; color: white;">LEARN HTML 1</span></p> <br>
-    <button><p><a style="color: white;" href="index.html">HOME</a></p></button>
-    </div><br>
-<pre>
-<button> <a style="color: white;" href="about.html">About</a></button>     <button> <a style="color: white;  ;"  href="contact.html">Contact</a></button>     <button><a style="color: white;" href="reference.html">Reference</a></button>  
+    <div class="header">
+        <h1>LEARN HTML 1</h1>
 
+        <a href="index.html" style="display:inline-block;background:blue;color:white;padding:10px 25px;border-radius:10px;text-decoration:none;">
+            HOME
+        </a>
+    </div>
 
-<button> <a style="color: white;" href="introduction.html">Introduction</a></button>  <button><a style="color: white;" href="basics.html">Basics</a></button>  <button><a style="color: white;" href="elements.html">Elements</a></button>  <button><a style="color: white;" href="coming-soon.html">MORE</a></button>
-</pre>
+    <div class="button-grid">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="reference.html">Reference</a>
+        <a href="introduction.html">Introduction</a>
+
+        <a href="basics.html">Basics</a>
+        <a href="elements.html">Elements</a>
+
+        <a href="coming-soon.html">More</a>
+    </div>
+
 </body>
-
-
 </html>
