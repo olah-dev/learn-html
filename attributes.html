@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Attributes</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:skyblue;
+    color:black;
+    font-family:"Times New Roman", serif;
+    font-size:16px;
+    line-height:1.7;
+    padding:20px;
+}
+
+.header{
+    background:black;
+    color:white;
+    max-width:700px;
+    width:100%;
+    margin:20px auto;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+
+.header h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.home-btn{
+    background:blue;
+    color:white;
+    text-decoration:none;
+    padding:10px 25px;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.home-btn:hover{
+    background:rgb(25,25,219);
+}
+
+h2{
+    font-size:36px;
+    margin:25px 0 15px;
+}
+
+h3{
+    font-size:28px;
+    margin:20px 0 10px;
+}
+
+.example{
+
+    background:black;
+    color:white;
+    max-width:900px;
+    width:100%;
+    margin:30px auto;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+
+}
+
+pre{
+    white-space:pre-wrap;
+    word-wrap:break-word;
+}
+.note{
+
+    color:red;
+    font-weight:bold;
+}
+
+.navigation{
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+
+}
+
+
+.navigation a{
+
+    background:blue;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:10px;
+
+}
+
+
+.navigation a:hover{
+
+    background:rgb(25,25,219);
+
+}
+
+
+@media(max-width:600px){
+
+.header h1{
+
+font-size:30px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+h3{
+
+font-size:22px;
+
+}
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>LEARN HTML 1</h1>
+
+<a href="index.html" class="home-btn">
+HOME
+</a>
+
+</div>
+
+<h2>HTML Attributes</h2>
+<p>Attributes provide additional information about HTML elements.</p>
+
+<h3>HTML Attributes</h3>
+<ul>
+     <li>Html elements can have attributes</li>
+     <li>Attributes provide additional information about an element</li>
+     <li>Attributes are always specific in the start tag</li>
+     <li>Attributes come in name/value pairs: name="value"</li>
+</ul>
+
+<h3>The Lang Attributes</h3>
+<p>
+    The document language can be declared in the &lt;html> tag.<br>
+The language is declared in the lang attribute.<br>
+Declaring a language is important for accessibility applications (screen readers) and search engines.
+</p>
+
+<div class="example">
+   <h3>Example</h3>
+
+<pre><code>
+&lt;!DOCTYPE html>
+&lt;html lang="en-US">
+&lt;body>
+
+&lt;h1>My First Heading&lt;/h1>
+
+&lt;p>My First paragragh.&lt;/p>
+
+&lt;/body>
+&lt;/html>
+</code></pre>
+</div>
+<p>
+The first two letters specify the language (en). If there is a dialect, use two more letters (US).
+</p>
+
+<h2>The title Attribute</h2>
+<p>
+    HTML paragraphs are defined with the &lt;p> tag.<br>
+In this example, the &lt;p> element has a title attribute. The value of the attribute is "Learn HTML is fun": 
+</p>
+<div class="example">
+   <h3> Example</h3>
+<pre><code>
+&lt;p title="Learn HTML is fun">
+Learning HTML5 is fun. You can learn to develope web pages to web apps.
+This Learning Application was developed using HTML.&lt;/p>
+</code></pre>
+</div>
+
+<p class="note">
+    NOTE:
+</p>
+<p>
+    When you move the mouse over the element, the title will be displayed as a tooltip. 
+</p>
+<h3>The href Attribute</h3>
+<p>HTML links are defined with the &lt;a> tag. The link address is specified in the href attribute:</p>
+
+<div class="example">
+    <h3>Example</h3>
+
+&lt;a href="http://www.google.com">This is a link &lt;/a>
+
+</div>
+<p>You will learn more about links and the &lt;a> tag later in this tutorial</p>
+
+<h3>Size Attributes</h3>
+<p>
+    HTML images are defined with the &lt;img> tag.<br>
+The filename of the source (src), and the size of the image (width and height) are all provided as attributes:
+</p>
+<div class="example">
+    <h3>Example</h3>
+
+&lt;img src="someimage.jpg" width="104" height="142">
+
+</div>
+<p>
+    The image size is specified in pixels: width="104" means 104 screen pixels wide.<br>
+You will learn more about images and the &lt;img> tag later in this tutorial.
+</p>
+
+<h3>The alt Attribute</h3>
+
+<p>
+    The alt attribute specifies an alternative text to be used, when an HTML element cannot be displayed.<br>
+The value of the attribute can be read by "screen readers". This way, someone "listening" to the webpage, i.e. a blind person,
+can "hear" the element.
+</p>
+
+<div class="example">
+Example
+
+&lt;img src="someimage.jpg" alt="some image is being deplayed" width="104" height="142">
+
+</div>
+
+<h3>It's Recommended: Always Use Lowercase Attributes</h3>
+<p>
+The HTML5 standard does not require lower case attribute names.<br>
+The title attribute can be written with upper or lower case Title and/or TITLE.<br>
+It's recommended lowercase in HTML4, and demands lowercase for stricter documentation types like XHTML.
+</p>
+
+<p class="note">
+    NOTE:
+</p>
+
+<P>Lower case is the most common. Lower case is easier to type.I always use lower case attribute names. </P>
+
+<h3>Suggest: Always Quote Attribute Values</h3>
+<p>
+    The HTML5 standard does not require quotes around attribute value.<br>
+The href sttribute, demonstrated above, can be written as:
+</p>
+
+<div class="example">
+    <h3>Example</h3>
+
+&lt;a href=http://www.google.com>
+
+</div>
+<p>
+    Recommended quotes in HTML4, and demands quotes for stricter document types like XHTML.<br>
+Sometimes it is necessary to use quotes. This will not display correctly, because it contains a space:
+</p>
+<div class="example">
+<h3>Example</h3>
+
+&lt;a title=about HTML5>
+</div>
+
+<p class="note">
+    NOTE:
+</p>
+<P>
+    Using quotes are the most common. Omitting quotes can produce errors. I always use quotes around attribute values. 
+</P>
+<h3>Single or Double Quotes?</h3>
+<p>
+    Double style quotes are the most common in HTML, but single style can also be used.<br>
+In the some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+</p>
+
+<div class="example">
+<h3>Example</h3>
+
+&lt;p title='John "Shotgun" Nelson'>
+
+</div>
+Or vice versa: 
+
+<div class="example">
+    <h3>Example</h3>
+
+&lt;p title="John 'ShotGun' Nelson">
+
+</div>
+
+<h3>Chapter Summary</h3>
+<ul>
+<li>All HTML elements can have attributes</li>
+<li>The HTML title attribute provides additional "tool-tip" information</li>
+<li>The HTML href attribute provides address information for links</li>
+<li>The HTML width and height attributes provide size information for images</li>
+<li>The HTML alt attribute provides text for screen readers</li>
+<li>Reconmmended to always use lowercase HTML attribute names</li>
+<li>Reconmmended to use quote attributes with double quotes</li>
+</ul>
+
+<div class="navigation">
+    <a href="elements.html">← Previous</a>
+
+    <a href="index.html">🏠 Home</a>
+</div>
+
+
+</body>
+</html>
